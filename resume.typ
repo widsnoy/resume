@@ -74,9 +74,9 @@
 == #fa-graduation-cap 教育背景
 
 #sidebar(with-line: true, side-width: 12%)[
-  2022.06
+  2026.06
 
-  2026.09
+  2022.09
 ][
   *杭州电子科技大学* · 卓越学院
   \
