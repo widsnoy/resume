@@ -1,8 +1,8 @@
 // 字体
 #let font = (
-  main: "IBM Plex Serif",
-  mono: "IBM Plex Mono",
-  cjk: "Noto Serif CJK SC",
+  main: "Sarasa UI SC",
+  mono: "Sarasa Mono SC",
+  cjk: "Sarasa UI SC",
 )
 
 // 图标
@@ -166,6 +166,20 @@
   set text(weight: "extralight")
   body
 })
+
+// 获奖
+#let award(
+  title,
+  desc,
+  endnote
+) = {
+  v(0.25em)
+  grid(
+    columns: (65%, 1fr, auto),
+    gutter: (0em),
+    title, desc, endnote
+  )
+}
 
 // 项目
 #let item(

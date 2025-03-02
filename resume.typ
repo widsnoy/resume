@@ -16,6 +16,7 @@
 #let fa-windows = icon("icons/fa-windows.svg")
 #let fa-wrench = icon("icons/fa-wrench.svg")
 #let fa-work = icon("icons/fa-work.svg")
+#let fa-blog = icon("icons/fa-blog.svg")
 
 // 设置简历选项与头部
 #show: resume.with(
@@ -35,54 +36,55 @@
   //headerCenter : true,
 
   // 如果不需要头像，则将下面三行的参数注释或删除
-  photograph: "profile.jpg",
-  photograph-width: 10em,
-  gutter-width: 2em,
+  // photograph: "profile.jpg",
+  // photograph-width: 10em,
+  // gutter-width: 2em,
 )[
-  = 某某
+  = 范宇航
 
   #info(
     color: theme-color,
     (
       icon: fa-phone,
-      content: "(+86) 133-3333-3333",
-    ),
-    (
-      icon: fa-building-columns,
-      content: "某某大学",
-    ),
-    (
-      icon: fa-graduation-cap,
-      content: "某某专业",
+      content: "(+86) 188-8196-7086",
     ),
     (
       icon: fa-envelope,
-      content: "liming@example.com",
-      link: "mailto:liming@example.com",
+      content: "ricofx47@outlook.com",
+      link: "mailto:ricofx47@outlook.com"
     ),
     (
       icon: fa-github,
-      content: "github.com/liming-dev",
-      link: "https://github.com/liming-dev",
+      content: "github.com/widsnoy",
+      link: "https://github.com/widsnoy",
+    ),
+    (
+      icon: fa-blog,
+      content: "my blog",
+      link: "https://widsnoy.top",
     ),
   )
 ][
   #h(2em)
 
-  *简历内容由 AI 生成，不代表真实内容。*作为一名计算机专业的学生，我专注于全栈开发和云计算技术。具有扎实的编程基础，热衷于开源项目贡献。在校期间参与多个实验室项目，对人工智能和分布式系统有深入研究。
+  作为 ACMer，除了具有好的算法思维，我的代码实现能力也很出色，比赛时的大模拟题，较复杂的数据结构题，由我写基本能一次通过，需要 debug 时也能很快找出问题。除了比赛外，也爱好折腾电子产品，同时学习了很多 Linux、Android 的知识。
 ]
 
 
 == #fa-graduation-cap 教育背景
 
 #sidebar(with-line: true, side-width: 12%)[
-  2024.06
+  2022.06
 
-  2020.09
+  2026.09
 ][
-  *某某大学* · 某某学院 · 某某专业
+  *杭州电子科技大学* · 卓越学院
+  \
+  计算机科学与技术 本科
+  \
 
-  GPA: 5 / 5 · Rank: 0%
+  英语: CET6
+  //GPA: 5 / 5 · Rank: 0%
 ]
 
 
@@ -90,35 +92,55 @@
 
 #sidebar(with-line: false, side-width: 12%)[
   *操作系统*
-  
-  *掌握*
-  
-  *熟悉*
+  \
 
-  *了解*
+  *编程技术*
+
 ][
   #fa-linux Linux, #h(0.5em) #fa-windows Windows
   
-  React, JavaScript, Python
+  C, C++, 数据结构, 常见图论、数论算法
   
-  Vue, TypeScript, Node.js
+  print/gdb等代码调试方法, linux 常用命令, 简单 bash 脚本编写
 
-  Webpack, Java
 ]
 
 
 == #fa-award 获奖情况
 
-#item(
-  [ *互联网+ 大学生创新创业大赛* ],
-  [ *省级金奖* ],
-  date[ 2022 年 10 月 ],
+#award(
+  [ *第 49 届 ICPC 国际大学生程序设计竞赛亚洲区域赛杭州站* ],
+
+  [ *银奖* ],
+  date[ 2024 年 11 月 10 日]
 )
 
-#item(
-  [ *ACM-ICPC 区域赛* ],
+#award(
+  [ *第 49 届 ICPC 国际大学生程序设计竞赛亚洲区域赛南京站* ],
+
+  [ *银奖* ],
+  date[ 2024 年 11 月 03 日]
+)
+
+#award(
+  [ *中国大学生程序设计竞赛全国邀请赛（山东）* ],
+
+  [ *金奖* ],
+  date[ 2024 年 05 月 26 日]
+)
+
+#award(
+  [ *第 9 届 CCPC 中国大学生程序设计竞赛深圳站* ],
+
   [ *铜奖* ],
-  date[ 2021 年 12 月 ],
+  date[ 2023 年 11 月 12 日]
+)
+
+#award(
+  [* 第 33 次 CCF 计算机软件能力认证 *],
+
+  [* 满分 *],
+  date[ 2024 年 03 月 31 日]
 )
 
 
@@ -126,43 +148,39 @@
 
 #item(
   link(
-    "https://github.com/liming-dev/cloud-platform",
-    [ *轻量级容器云平台* ],
+    "https://github.com/widsnoy/bustub-private",
+    [ *CMU 15-445 — Fall 2024* ]
   ),
-  [ *实验室项目* ],
-  date[ 2022 年 03 月 – 2022 年 12 月 ],
+  [ *个人项目* ],
+  date[ 2025 年 02 月 – 2025 年 03 月 ]
 )
 
-#tech[ Golang, Docker, Kubernetes ]
+#tech[ C++, Database Systems ]
 
-基于 Kubernetes 的容器管理平台，提供Web界面的容器编排服务
+一个用现代 C++ 编写的关系型数据库，学习并完成了 CMU-15445 的 Lecture 和 Projects
 
-- 设计实现了基于 RBAC 的多租户权限管理系统
-- 开发了容器资源动态伸缩和负载均衡模块
-- 使用 Prometheus 和 Grafana 构建监控告警系统
+- Buffer Pool Manager: 使用 *LRU-k* 算法进行页面置换，设计 PageWriteGuard/ PageReadGuard 使用 *RAII* 的思想保护页面读写
+
+- Database Index: 使用 *B+Tree* 提供索引支持，不仅能实现 k-v 存储，还能在建立索引的情况下实现排序功能。使用了 *螃蟹锁*  *乐观/悲观锁* 策略优化并发性能。
+
+- Query Execution：sql 语句执行采用 *火山模型*, 实现了 SeqScan/IndexScan, Insert, Update, Delete, Join, *ExternalMergeSort* 等算子，以及 NestedLoopJoin to HashJoin， SeqScan to IndexScan 查询计划优化器
+
+- Concurrency Control：使用 *MVCC* 进行版本控制，读写操作不会互相阻塞，高并发情况下相比于 2PL 具有更好的性能，提供快照级别隔离。
 
 #item(
   link(
-    "https://github.com/liming-dev/distributed-cache",
-    [ *分布式缓存系统* ],
+    "https://github.com/widsnoy/widsnoy-la32r",
+    [ *CPU 设计实战* ]
   ),
   [ *个人项目* ],
-  date[ 2023 年 01 月 – 2023 年 04 月 ],
+  date[ 2024 年 04 月 – 2024 年 06 月 ]
 )
 
-#tech[ Golang, Redis, etcd ]
+#tech[ Chisel，loongarch32r ]
 
-一个支持分布式部署的高性能缓存系统
+一个使用 Chisel 编写的五级流水线 CPU
 
-- 实现了一致性哈希算法进行数据分片
-- 采用 Raft 协议保证集群一致性
-- 支持缓存自动过期和 LRU 淘汰策略
+- 支持 *loongarch32* 精简指令集，采用 *AXI* 总线接口与系统中的内存、外设进行交互
 
-
-== #fa-building-columns 校园经历
-
-#item(
-  [ *计算机学院学生科创中心主席* ],
-  [],
-  date[ 2022 年 09 月 – 2023 年 06 月 ],
-)
+- 支持取指地址错、地址非对齐等异常处理。2 个软件中断、8 个硬件中断和定时器中断支持。
+- 使用 verilator 将 verilog 转换为  C++ 代码后使用 * soc-simulator* 进行对拍测试。相比 Vivado 上仿真的优点是速度更快，并且能精确定位到行为不一致的第一拍。
