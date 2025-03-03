@@ -37,7 +37,7 @@
   body,
 ) = {
   // 页边距设定
-  set page(paper: "a4", numbering: "1", margin: margin)
+  set page(paper: "a4", margin: margin)
 
   // 基础字体设定
   set text(font: (font.main, font.cjk), size: size, lang: "zh")
